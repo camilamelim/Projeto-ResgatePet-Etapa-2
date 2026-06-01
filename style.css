@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9fafb;
+    color: #333;
+}
+
+/* HEADER FIXO */
+header {
+    position: sticky;
+    top: 0;
+    background: #2e7d32;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+/* BANNER HERO */
+.banner {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/imagens/header.png') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.banner p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* BOTÃO PRINCIPAL */
+.btn {
+    background: #4caf50;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #388e3c;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    color: #666;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    background: #2e7d32;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #1b5e20;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+/* TABELA */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2e7d32;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #2e7d32;
+    color: #ccc;
+    text-align: center;
+    padding: 30px;
+}
+
+.filtro-form {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.filtro-form input {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.filtro-form button {
+    width: 100%;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 18px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filtro-form button:hover {
+    background: #1b5e20;
+}
+
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-section h2 {
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* GARANTE QUE O BOTÃO NÃO QUEBRE O LAYOUT */
+.cta-section .btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEM PADRÃO */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CONTEÚDO */
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TEXTO */
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* BOTÃO IGUAL AO TERCEIRO */
+.card-btn {
+    margin-top: 20px;
+    align-self: center; /* 👈 CENTRALIZA */
+    background: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background: #1b5e20;
+}
+
+.destaque {
+    background: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.destaque h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* CAIXA */
+.destaque-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+/* TÍTULO */
+.destaque-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* TEXTO */
+.destaque-box p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* LISTA */
+.destaque-box ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.destaque-box li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* BOTÃO */
+.btn-destaque {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-destaque:hover {
+    background: #1b5e20;
+}
+
+.faq {
+    padding: 60px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.faq h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* CONTAINER */
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARD DE PERGUNTA */
+.faq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+}
+
+/* PERGUNTA */
+.faq-item h3 {
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+/* RESPOSTA */
+.faq-item p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* PORTFÓLIO */
+.portfolio {
+    padding: 60px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.portfolio p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.portfolio-card {
+    background: white;
+    width: 220px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+/* AVATAR (LETRA) */
+.avatar {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    background: #2e7d32;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NOME */
+.portfolio-card h3 {
+    margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.portfolio-card a {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.portfolio-card a:hover {
+    background: #1b5e20;
+}
+
+/* MENU ATIVO */
+nav a.active {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* DETALHE DO ANIMAL */
+.animal-detalhe {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.animal-detalhe h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* LAYOUT LADO A LADO */
+.animal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* IMAGEM */
+.animal-img img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* INFORMAÇÕES */
+.animal-info {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: left;
+    min-width: 250px;
+}
+
+/* TABELA */
+.animal-info table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.animal-info td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* BOTÃO */
+.btn-adotar {
+    display: block;
+    text-align: center;
+    background: #2e7d32;
+    color: white;
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-adotar:hover {
+    background: #1b5e20;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.descricao h2 {
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    color: #555;
+    line-height: 1.6;
+}
