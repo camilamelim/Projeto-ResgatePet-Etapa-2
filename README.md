@@ -50,7 +50,7 @@ Apresentação dos desenvolvedores
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python** 🐍
+- **Python**
 - **HTML5**
 - **CSS3**
 - **JavaScript**
